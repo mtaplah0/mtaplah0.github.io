@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>Relationships in a Database</title>
+		<link rel="stylesheet" type="text/css" href="styles/project.css"/>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="homepage.html" title="Introduction to  Database and Overview of the Website">Home</a></li>
+				<li><a href="relationships.html" class="active" title="Overview of Database Normalization, Designs, and Relationships">Relationships</a></li>
+				<li><a href="creating.html">Creating</a></li>
+				<li><a href="querying.html">Querying</a></li>	
+				<li><a href="joins.html">Joins</a></li>	
+			</ul>
+		</nav>
+		<header>
+			<img src="images/sql.png" alt="SQL header image" />
+			<h1>Database for Beginners</h1>
+		</header>
+		<main>
+			<div id="wrapper">
+				<h3>Designing a Database</h3>
+					<p> Designing 
+					</p>
+				<h3>Normalization</h3>
+				<p>Normalization is the process if removing anomalies and redundancies from the database design.</p>
+				<h4>Anomalies</h4>
+					<ul>
+						<li><b>Insertion Anomaly</b> - this occurs when can't enter data because other data are missing.</li>
+						<li><b>Update Anomaly</b> - occurs when data stored  in more than place. If the data needs to be changed or 
+						updated, it would need to be update all over or else it will be inconsistent.</b></li>
+						<li><b>Deletion Anomaly</b> - occurs where deleting a piece of data inadvertly causes other data to be lost.</li>
+					</ul>	
+				<h4>First Normal Form</h4>
+				<h4>Second Normal Form</h4>
+				<h4>Third Normal Form</h4>
+					<img src="images/blankimagetest.jpg" width="360" height="315" class="clearfix"//>
+					
+				<h4>Logical Design</h4>
+					<p>The quick brown fox jumps over the lazy dog.
+					we refer to an electronic database. An electronic database is a database that runs on a computer or a server. 
+					For the tutorials on this website, we will mainly focus on electronic databases precisely - relational databases. 
+					A database can also refer to a non-electronics database. For example, a phone-book, library card catalog, a dictionary, etc..
+					
+					<img src="images/blankimagetest.jpg" width="360" height="315" class="clearfix"/>
+					</p>
+				<h4>Physical Design</h4>
+					<p>The quick brown fox jumps over the lazy dog.
+					we refer to an electronic database. An electronic database is a database that runs on a computer or a server. 
+			For the tutorials on this website, we will mainly focus on electronic databases precisely - relational databases. 
+			A database can also refer to a non-electronice database. For example, a phonebook, library card catalog, a dictionary, etc..
+					</p>
+					<img src="images/blankimagetest.jpg" width="360" height="315" class="clearfix"//>
+				
+		
+				<h3>Types of Relationships</h3>
+				<h4>One-to-one</h4>
+				<p>The quick brown fox jumps over the lazy dog
+				</p>
+				<h4>One-to-many</h4>
+				<p>The quick brown fox jumps over the lazy dog
+				</p>
+				<h4>Many-to-many</h4>
+				<p>The quick brown fox jumps over the lazy dog
+				</p>
+				<h3>Referential Integrity</h3>
+				<h3>Denormalization</h3>
+				<p>Denormalization is the process of joining tables that were seperated in the normalization
+				process to improve performance.<p>
+			</div>
+		</main>
+		<footer>
+			<div class="validation">
+				<p>
+				&#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				  HTML Validation 
+			   </a> 
+				  &#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				 CSS Validation
+			   </a>
+			   &#9824;
+			   </p>
+		   </div>
+		   <hr>
+			 <h2 id="alignCenter">Leave us a comment</h2>
+		   <p>Tell us how we are doing, what we did wrong, or what you would like to see, so we can improve our contents.
+		   </p>
+		   <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			   <label>E-mail:  </label>
+				<input type="text" name="email" id="email"> <br>
+			   <label>First Name: </label>
+				<input type="text" name="firstname" id="firstname"> <br>
+			   <label>Last Name: </label>
+				<input type="text" name="lastname" id="lastname"> <br><br>
+			   <label>Comment: <br>  </label>
+			   <textarea name="comment" id="comment"  cols="100" rows="15">
+				</textarea>  <br>
+			   <input id="mysubmit" type="Submit">
+		   </form>
+		</footer>
+	</body>
+</html>
