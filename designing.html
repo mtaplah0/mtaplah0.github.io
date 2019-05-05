@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset= "UTF-8"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Relationships in a Database</title>
+		<link rel="stylesheet" type="text/css" href="project.css"/>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Introduction to  Database and Overview of the Website">Home</a></li>
+				<li><a href="designing.html" class="active" title="Overview of Database Normalization and Design">Designing</a></li>
+				<li><a href="relationships.html" title="Types of Relationships">Relationships</a></li>
+				<li><a href="creating.html" title="Create and Alter statement and datatypes">Creating</a></li>
+				<li><a href="querying.html" title="Basic SELECT Statement to Query a Database">Querying</a></li>	
+				<li><a href="joins.html" title="Types of Joins">Joins</a></li>	
+			</ul>
+		</nav>
+		<header>
+			<img src="banner.png" alt="SQL header image" />
+			<h1>Database for Beginners</h1>
+		</header>
+		<main>
+			<div id="wrapper">
+				<h3>Designing a Database and Database Normalization</h3>
+				<p>Designing a Normalization is the process of removing anomalies and redundancies from the database design. The normalization process requires certain set of rules
+				or design to reduce or eliminate anomalies, it is known as normal forms.</p>
+				<p id="aligncenter">
+				<iframe width="860" height="515" src="https://www.youtube.com/embed/xoTyrdT9SZI" frameborder="0" allow="accelerometer; autoplay; 
+				encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
+				</iframe>
+				</p>
+				
+					
+				
+				<h4>Anomalies</h4>
+					<ul>
+						<li><b>Insertion Anomaly</b> - this occurs when can't enter data because other data are missing.</li>
+						<li><b>Update Anomaly</b> - occurs when data stored  in more than place. If the data needs to be changed or 
+						updated, it would need to be update all over or else it will be inconsistent.</b></li>
+						<li><b>Deletion Anomaly</b> - occurs where deleting a piece of data inadvertly causes other data to be lost.</li>
+					</ul>	
+				
+				<h4>First Normal Form</h4>
+				<p>First normal form involves removing all repeated groups or arrays. An entity is in the first normal formals if every attribute represents one value,
+				no repeating groups or arrays, and each row is unique. If a table is not in first normal form, you will notice that it will not have a single value store in a column. </p>
+				<figure>
+					<img src= "1nf.png"  alt="First Normal Form" />
+					<figcaption><em>Example of First Normal Form</em></figcaption>
+				</figure>
+				<h4>Second Normal Form</h4>
+				<p>Second Normal Forms removes functional dependencies. Functional dependencies refer to groups of related attributes that form subthemes within an entity.</p>
+				<figure>
+					<img src= "2nf.png"  alt="Second Normal Form" />
+					<figcaption><em>Example of Second Normal Form</em></figcaption>
+				</figure>
+				<h4>Third Normal Form</h4>
+				<p>Third normal form involes removing trasient dependencies. Transcient dependencies is when one attribute depends on another attribute for its meaning.</p>
+				<figure>
+					<img src= "3nf.png"  alt="Third Normal Form" />
+					<figcaption><em>Example of Third Normal Form</em></figcaption>
+				</figure>
+				<p><em><b>Note: </b> There are other types of normal forms, but we will briefly define first, second, and third normal forms for now.</em></p>	
+				<h4>Logical Design</h4>
+					<p>The entity design without regard to the RDBMS or the system that it will run on. For example, the logical design shown below was designed using microsoft visio. It shows the Entity 
+						Relation Diagram (ERD). Entity relation diagram is a diagram of entities, their attributes, and the relationships among the entities.
+					</p>
+				<figure>
+					<img src= "logicaldesign.png"  alt="Logical Design" />
+					<figcaption><em>Example of Logical Design</em></figcaption>
+				</figure>
+				<h4>Physical Design</h4>
+					<p>Physical design is the design adapted to the RDBMS and system constraints and features. 
+					</p>		
+				<h3>Additional Database Terminology</h3>
+				<ul>  
+					<li><b>Constraints</b> - limits on what the database will do.</li>
+					<li><b>Primary Key</b> - a unique key that identifies each row in a table.</li>
+					<li><b>Foreign Key </b> - a primary key that is repeated in another table to create a link between the tables.</li>
+					<li><b>Composite Key</b> - a key that consists of more than one attribute.</li>
+					<li><b>Natural key</b> - a natural key is a single column or set of columns that uniquely identifies a single record in a table, 
+					where the key columns are made up of real data </li>
+					<li><b>Surrogate Key</b> - an artificial key often just auto-incremented numbers. </li>
+				</ul>
+				<h3>Denormalization</h3>
+				<p>Denormalization is the process of joining tables that were seperated in the normalization
+					process to improve performance.</p>
+			</div>
+		</main>
+		<footer>
+			<div class="validation">
+				<p>
+				&#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				  HTML Validation 
+			   </a> 
+				  &#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				 CSS Validation
+			   </a>
+			   &#9824;
+			   </p>
+		   </div>
+		   <hr>
+			 <h2 id="alignCenter">Leave us a comment</h2>
+		   <p>Tell us how we are doing, what we did wrong, or what you would like to see, so we can improve our contents.
+		   </p>
+		   <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			   <label>E-mail:  </label>
+				<input type="text" name="email" id="email"> <br>
+			   <label>First Name: </label>
+				<input type="text" name="firstname" id="firstname"> <br>
+			   <label>Last Name: </label>
+				<input type="text" name="lastname" id="lastname"> <br><br>
+			   <label>Comment: <br>  </label>
+			   <textarea name="comment" id="comment"  cols="100" rows="15">
+				</textarea>  <br>
+			   <input id="mysubmit" type="Submit">
+		   </form>
+		</footer>
+	</body>
+</html>
