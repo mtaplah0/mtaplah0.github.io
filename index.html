@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset= "UTF-8"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Introduction to Database</title>
+		<link rel="stylesheet" type="text/css" href="project.css"/>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="homepage.html" title="Introduction to  Database and Overview of the Website" class="active">Home</a></li>
+				<li><a href="designing.html" title="Overview of Database Normalization and Design">Designing</a></li>
+				<li><a href="relationships.html" title="Types of Relationships">Relationships</a></li>
+				<li><a href="creating.html" title="Create and Alter statement and datatypes">Creating</a></li>
+				<li><a href="querying.html" title="Basic SELECT Statement to Query a Database">Querying</a></li>	
+				<li><a href="joins.html" title="Types of Joins">Joins</a></li>	
+			</ul>
+		</nav>
+		<header>
+			<img src="banner.png" alt="SQL header image" />
+			<h1>Database for Beginners</h1>
+			<script>
+					alert("Welcome to Database for Beginners! \nPlease feel free to leave  us a comment.");
+			</script>
+		</header>
+		<main>
+			<div id="wrapper">	
+				<h3>What is a Database?</h3>
+				<p>A database is a collection of related data. Most often when we speak of a database, 
+				we refer to an electronic database. An electronic database is a database that runs on a computer or a server. 
+				For the tutorials on this website, we will mainly focus on electronic databases precisely - relational databases. 
+				A database can also refer to a non-electronics database. For example, a phone-book, library card catalog, a dictionary, etc..
+				</p>
+				<h3>Database Management Systems (DBMS)</h3>
+				<p>A database management system is a system software used for creating and maintaining the structure of a database. It
+				is used to input, manipulate, and retrieve data.
+				</p>
+				<h4>Types of Database Management Systems (DBMS)</h4>
+				<p>
+					<ul>
+						<li><b>Hierarchical Database Management Systems</b> - organized like a tree like structure. Often used in large institution such as banks
+						and insurance companies.</li>
+						<li><b>Network Database Management Systems</b> - use a network structure to create relationships between entities. Often used on larger digital computers.</li>
+						<li><b>Relational Database Management Systems</b> - is a system used for managing relational databases. </li>
+						<li><b> Object-oriented Database Management Systems</b> - supports the creation and modeling of data as objects. </li>
+					</ul>
+					<em><b>Note: </b> On this website, our primary focus is Relational Database Management Systems.</em>
+				</p>
+		
+				<h3>Relational Database Management Systems (RDBMS)</h3>
+				<p> A relaional database management system is a DBMS that is based on the relational model introduced by Edgar Frank Codd. RDMBS needs to allow the user create one or more databases objects
+				associated with that database such as tables, relationships, views, and queries. In 1974, IBM began developing System R, a research project to develop prototype RDBMS. The first commercially available RDBMS was Oracle, released by Relational Software, today it is known as Oracle Cooperation. 
+				Relational database is the basic for SQL and all modern databases. Common RDBMS are Oracle, SQL Server, DB2, MySQL, PostGres SQL, Access, etc.. 
+				Screenshots or examples shown on this website will be Oracle SQL developer.
+					
+				</p>
+				<h4>What is SQL?</h4>
+				<p>
+					SQL (Structured Query Language) is the sublanguage with commands used to create database objects and manipulate data stored in a database. It is not considered a programming
+					language like Java, C++, or C#. 
+				</p>
+					
+				<h3>Basic Database Terminology</h3>
+				<ul>  
+					<li><b>Character</b> - is the basic unit of data, and it can be a letter, number, or special symbol.</li>
+					<li><b>Field</b> - a group of related characters.</li>
+					<li><b>Record </b> - a collection of fields.  </li>
+					<li><b>File</b> - a group of records about the same types of entities.</li>
+					<li><b>Column</b> - a field is commonly refered to as column in the physical design when creating a database. </li>
+					<li><b>Row</b> - a record is also called a row. </li>
+					<li><b>Table</b> - a file is known as a row. </li>
+					<li><b>Entity</b> - an object of concern to a database. It is used in the logical design phase.</li>
+					<li><b>Attribute </b> - describes or define the aspect of a database entity. It is used in the logical phase but also know as a column in the physical design.</li>
+				</ul>
+			</div>
+		</main>
+		<footer>
+			<div class="validation">
+				<p>
+				&#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				  HTML Validation 
+			   </a> 
+				  &#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				 CSS Validation
+			   </a>
+			   &#9824;
+			   </p>
+		   </div>
+		   <hr>
+		   <h2 id="alignCenter">Leave us a comment</h2>
+		   <p>Tell us how we are doing, what we did wrong, or what you would like to see, so we can improve our contents.
+		   </p>
+		   <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			   <label>E-mail:  </label>
+				<input type="text" name="email" id="email"> <br>
+			   <label>First Name: </label>
+				<input type="text" name="firstname" id="firstname"> <br>
+			   <label>Last Name: </label>
+				<input type="text" name="lastname" id="lastname"> <br><br>
+			   <label>Comment: <br>  </label>
+			   <textarea name="comment" id="comment"  cols="100" rows="15">
+				</textarea>  <br>
+			   <input id="mysubmit" type="Submit">
+		   </form>
+		   
+		</footer>
+	</body>
+</html>
