@@ -164,6 +164,12 @@ input {
 #alignCenter {
 	text-align: center;
 }
+
+.designedby {
+	text-align: center;
+	font-size: 70%;
+}
+
 footer {
 	font-size: 85%;
 	margin: 35px;
