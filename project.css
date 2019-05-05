@@ -2,7 +2,7 @@ body {
 	background-color: #F8F8FF;
 	color: 	#1f385e;
 	font-family: arimo;
-	font-size: 150%;
+	font-size: 140%;
 }
 
 nav a {
@@ -95,6 +95,10 @@ main p {
 	margin-left: 1em;
 }
 
+figure {
+	text-align: center;
+}
+
 .float {
 	float: right;
 	margin-left: 50px;
@@ -110,6 +114,11 @@ main p {
 	text-align: center;
 	color: #1F3882;
 	border-radius: 5px;
+}
+
+#aligncenter
+{
+	text-align: center;
 }
 
  a {
