@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset= "UTF-8"/>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Relationships in a Database</title>
+		<link rel="stylesheet" type="text/css" href="project.css"/>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Introduction to  Database and Overview of the Website">Home</a></li>
+				<li><a href="designing.html" title="Overview of Database Normalization and Design" >Designing</a></li>
+				<li><a href="relationships.html" class="active" title="Types of Relationships">Relationships</a></li>
+				<li><a href="creating.html" title="Create and Alter statement and datatypes">Creating</a></li>
+				<li><a href="querying.html" title="Basic SELECT Statement to Query a Database">Querying</a></li>	
+				<li><a href="joins.html" title="Types of Joins">Joins</a></li>	
+			</ul>
+		</nav>
+		<header>
+			<img src="banner.png" alt="SQL header image" />
+			<h1>Database for Beginners</h1>
+		</header>
+		<main>
+			<div id="wrapper">
+				<h3>Types of Relationships</h3>
+				There are three kinds of relationships, namely: one to one, one to many, and many to many relationships. On this website, we will be using crow's foot 
+				notation to represent these types of relationships. Crow's foot notation diagram represents entities as boxes and relationships as lines between the boxes. Different crow's feet at the 
+				end of the lines represent the relative cardinality of the relationship. Cardinality refers to the number of allowed instances of the relationship.
+				<h4>One-to-one</h4>
+				<figure>
+					<img src= "onetoone.png"  alt="One to one relationship" />
+					<figcaption><em>In a one-to-one relationship, one record(row) in a table(entity) is associated with one or no more than one related record in the other table. 
+				One-to-one relationships can be rare, but also useful in certain scenarios. This relationship is used to class/subclass relationship</em></figcaption>
+				</figure>
+				<h4>One-to-many</h4>
+				<figure>
+					<img src= "onetomany.png"  alt="One to many relationship" />
+					<figcaption><em>In a one-to-many relationship, each record can have record can be associated to many records in the other table.</em></figcaption>
+				</figure>
+				<h4>Many-to-many</h4>
+				<figure>
+					<img src= "manytomany.png"  alt="many-to-many relationship" />
+					<figcaption><em>A many-to-many relationship means that mutliple records are associated with multiple records in the related table. </em></figcaption>
+				</figure>
+			</div>
+		</main>
+		<footer>
+			<div class="validation">
+				<p>
+				&#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				  HTML Validation 
+			   </a> 
+				  &#9824;
+			   <a href="http://jigsaw.w3.org/css-validator/check/referer" style = "text-decoration: none">
+				 CSS Validation
+			   </a>
+			   &#9824;
+			   </p>
+		   </div>
+		   <hr>
+			 <h2 id="alignCenter">Leave us a comment</h2>
+		   <p>Tell us how we are doing, what we did wrong, or what you would like to see, so we can improve our contents.
+		   </p>
+		   <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			   <label>E-mail:  </label>
+				<input type="text" name="email" id="email"> <br>
+			   <label>First Name: </label>
+				<input type="text" name="firstname" id="firstname"> <br>
+			   <label>Last Name: </label>
+				<input type="text" name="lastname" id="lastname"> <br><br>
+			   <label>Comment: <br>  </label>
+			   <textarea name="comment" id="comment"  cols="100" rows="15">
+				</textarea>  <br>
+			   <input id="mysubmit" type="Submit">
+		   </form>
+		   <p class="designedby">Designed by <a href="http://students.cpcc.edu/~mtaplah0/web110/introduction.html"> Monique Taplah</a></p>
+		</footer>
+	</body>
+</html>
